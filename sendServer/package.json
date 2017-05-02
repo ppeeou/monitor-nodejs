@@ -1,0 +1,16 @@
+{
+  "name": "send-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "diskspace": "^2.0.0",
+    "os-toolbox": "^0.2.5",
+    "socket.io": "^1.7.3"
+  }
+}
