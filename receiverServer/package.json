@@ -10,10 +10,13 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.17.1",
+    "colors": "^1.1.2",
     "cookie-parser": "^1.4.3",
     "express": "^4.15.2",
     "morgan": "^1.8.1",
     "path": "^0.12.7",
-    "serve-favicon": "^2.4.2"
+    "serve-favicon": "^2.4.2",
+    "uuid": "^3.0.1",
+    "v8-analytics": "^1.2.5"
   }
 }
