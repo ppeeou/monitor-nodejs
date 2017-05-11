@@ -11,7 +11,10 @@ var sort = {
     type: 'cpu',
     order: 'desc'
 }
-
+ckMonitor.info = {
+    os : os.hostname(),
+    platform :os.platform()
+}
 ckMonitor.current = function () {
     var core = {
         search: function (npm, method, drive) {
@@ -28,8 +31,7 @@ ckMonitor.current = function () {
                 return promise;
             }
         }
-    }
-    //adapter 패턴이용
+    } 
     return {
         'cpu': function () {
             return core.search(ostb, 'cpuLoad')
@@ -44,18 +46,9 @@ ckMonitor.current = function () {
             return core.search(diskspace, 'check', drive);
         }
     }
-}
-var callback = {
-    success: function (receive) {
-        console.log(receive);
-    },
-    error: function (data) {
-        console.log('error', JSON.parse(data));
-    }
-};
+} 
 
-// 메서드 호출 실행 방법
-
+// 메서드 호출 실행 방법 
 /*ostb*/
 // ckMonitor.current()
 //     .process()  //cpu, memory,process
